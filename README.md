@@ -1,2 +1,4 @@
 # TextPrompt
-Project in Delphi FireMonkey
+Project in Delphi FMX
+
+TEdit personalizado emulando TextPrompt com efeito de transição ao focar no campo.
