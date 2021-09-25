@@ -1,0 +1,82 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'TextPrompt'
+  ClientHeight = 420
+  ClientWidth = 260
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object sbPrincipal: TScrollBox
+    Align = Contents
+    Size.Width = 260.000000000000000000
+    Size.Height = 420.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 260.000000000000000000
+    Viewport.Height = 420.000000000000000000
+    object edNome: TEdit
+      Tag = 1
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 0
+      Position.X = 20.000000000000000000
+      Position.Y = 60.000000000000000000
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 60.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnChange = edNomeEnter
+      OnEnter = edNomeEnter
+      OnExit = edNomeExit
+      object btnNome: TClearEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 32.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Visible = False
+      end
+      object lbNome: TLabel
+        Align = Bottom
+        Opacity = 0.500000000000000000
+        Margins.Left = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Size.Width = 218.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Nome'
+        TabOrder = 0
+        object faNome: TFloatAnimation
+          AnimationType = Out
+          Duration = 0.300000011920929000
+          Interpolation = Circular
+          OnFinish = faAnimationFinish
+          PropertyName = 'Margins.Bottom'
+          StartValue = 0.000000000000000000
+          StopValue = 0.000000000000000000
+        end
+      end
+    end
+    object btnBotao: TButton
+      Align = Top
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 25.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 142.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Mudar Foco'
+    end
+  end
+end
